@@ -1,0 +1,47 @@
+/*blue #16A8F5*/
+html, body, section{
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+}
+
+header{
+	background: #333;
+	padding: 1px 0; /*закрывает margin в ul*/
+}
+nav{
+	width: 70%;
+	margin: 0 auto;
+}
+
+header > nav > ul{
+	list-style: none;
+}
+
+header > nav > ul a{
+	padding: 10px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+}
+
+header > nav > ul a:hover{
+	background: #1185C2;
+}
+
+#about{
+	height: 100%;
+	background: url(images/tree.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#resume{
+	background: #1185C2;
+}
