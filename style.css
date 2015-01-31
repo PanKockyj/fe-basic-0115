@@ -11,7 +11,13 @@ body{
 header{
 	background: #333;
 	padding: 1px 0; /*закрывает margin в ul*/
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 99;
+	width: 100%;
 }
+
 nav{
 	width: 70%;
 	margin: 0 auto;
@@ -36,12 +42,31 @@ header > nav > ul a:hover{
 }
 
 #about{
+	position: relative;
 	height: 100%;
 	background: url(images/tree.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
+
+#about > div:last-child{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
 #resume{
 	background: #1185C2;
+}
+
+.vertical-center{
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
 }
